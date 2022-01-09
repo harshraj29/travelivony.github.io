@@ -1,0 +1,84 @@
+<!Doctype html>
+	<html>
+	<head>
+		<title>Payment Time</title>
+		<!-- <link rel="stylesheet" href="payment gateway.css"> -->
+
+		<style>
+			.payment_method {width: 775px ; height: 320px;background-color:rgb(78,151,164);margin-left: 10px; border: 2px solid black;}
+.payment_method button img {height: 100px; width: 150px;}
+.payment_method h2{display: inline; padding-top: 10px;font-family: cursive;}
+.payment_method b {margin-left: 60px; font-size: 20px;font-family: cursive;}
+
+
+.personal_info {width: 775px ; height: 350px;background-color:rgb(78,151,164);margin-left: 10px;border: 2px solid black;}
+.personal_info h2{display: inline; padding-top: 10px;font-family: cursive;}
+.personal_info label{font-size: 20px;font-family: cursive;padding-left: 40px;}
+.personal_info input {height: 40px;width: 700px;margin-left: 40px; background-color: gainsboro;}
+
+.credit {width: 775px ; height: 540px;background-color:rgb(78,151,164);margin-left: 10px;border: 2px solid black;}
+.credit h2{display: inline; padding-top: 10px;font-family: cursive;}
+.credit label{font-size: 20px;font-family: cursive;padding-left: 40px;}
+.credit input {height: 40px;width: 700px;margin-left: 40px;background-color: gainsboro;}
+
+mark{border: 2px solid lightgrey;border-radius: 12px;}
+input {border: 2px solid black;}
+
+.submit {width: 735px ; height: 150px;background-color:rgb(78,151,164); padding-left: 40px; font-size: 22px;margin-left: 10px;border: 2px solid black;}
+
+body{background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("my.jpg"); background-size:cover;background-repeat: no-repeat; background-attachment: fixed; background-blend-mode:darken;}
+
+aside {width: 25%;display: inline-block; vertical-align: top; margin-top: 10px; margin-left: 70px;}
+main {width: 70%;display: inline-block;}
+		</style>
+	</head>
+	<body>
+		<main>
+		<form>
+		
+		<div class="payment_method">
+			<br><hr noshade="black"><img style="margin-left: 20px;"src="cashi.png" height="70px" width="70px">&ensp;&ensp;<h2><mark style="background-color: lightgrey;">Select Payment Method..💵💰</mark></h2><br><br><hr noshade="black"><br>
+			<button style="margin-left:40px;" type="button"><img src="credit.png"></button>&ensp;
+			<button type="button"><img src="net banking.png"></button>&ensp;
+			<button type="button" height="30px"><img src="paytm.jfif"></button>&ensp;
+			<button type="button"><img src="debit.png"></button>&ensp;<br>
+			<b>Credit Card</b> <b>Net Banking</b> <b style="margin-left:80px;">Paytm</b> <b style="margin-left:100px;">Debit Card</b>
+		</div>
+		<br>
+		<div class="personal_info">
+			<br><hr noshade="black"><img style="margin-left: 20px;"src="personal.png" height="70px" width="70px">&ensp;&ensp;<h2><mark style="background-color: lightgrey;">Personal Information..😇🙂</mark></h2><br><br><hr noshade="black"><br>
+			<Label>EMAIL</Label><br>
+			<input type="email" name="mail" placeholder="abc@gmail.com"><br><br>
+
+			<label>First Name</label>
+			<input type="text" name="name" placeholder="Enter Your Name"><br>
+		</div>
+		<br>
+		<div class="credit">
+			<br><hr noshade="black"><img style="margin-left: 20px;"src="cardi.png" height="70px" width="70px">&ensp;&ensp;<h2><mark style="background-color: lightgrey;">Credit Card Info..💳♦</mark></h2><br><br><hr noshade="black"><br>
+			<label>Name on Card</label><br>
+			<input type="text" name="name" placeholder="Enter Name of Card Owner"><br><br>
+
+			<label>Card Number</label>
+			<input type="number" name="card number" placeholder="XXXX XXXX XXXX XXXX"><br><br>
+
+			<label>Expiration</label>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<label>CVV Number</label><br>
+			<input style="width: 120px;"type="number" name="expiry" placeholder="mm/yy">&ensp;&ensp;&ensp;<input style="width: 120px;" type="number" placeholder="XXX"><br><br>
+			<label>Amount to be paid</label><br>
+			<input type="number" name="amount" value="20,000" placeholder="20,000" disabled><br>
+		</div>
+		<br>
+		<div class="submit"><br>
+			<input style="width: 30px;"type="checkbox" required>I hereby agree with all Terms & Conditions and Privacy Policy.<br><br>
+			<a href="thankyou.html">
+			<button style="direction:rtl;height:48px;width:100px; font-size:24px; margin-left:305px;font-family:cursive;border:2px solid black ;background-color:greenyellow;"type="button"><a href="thankyou.html"><mark style="background-color:white">Submit</mark></a></button>
+			</a>
+		</div>
+	</form>
+</main>
+	<aside>
+        	<button type="button" style="height:48px;width:100px; font-size:18px;font-family:cursive;border:2px solid black ;background-color:greenyellow;"><a href="hotel accomodation.html"><mark style="background-color:white";>BACK</mark></a></button>&ensp;&ensp;
+        	<button type="button" style="height:48px;width:100px; font-size:18px; font-family:cursive;border:2px solid black ;background-color:greenyellow;"><a href="../index.html"><mark style="background-color:white;">HOME</mark></a></button>
+        </aside>
+</body>
+</html>

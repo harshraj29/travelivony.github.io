@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+header .navigation .navigation-items a{
+  position: relative;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+
+
+section{
+  padding: 100px 200px;
+}
+
+.home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home .content{
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+
+.home .content.active{
+  display: block;
+}
+
+.home .content h1{
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content h1 span{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p{
+  margin-bottom: 65px;
+}
+
+.home .content a{
+  background: #fff;
+  padding: 15px 35px;
+  color: rgb(0, 0,0);
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.home .content a:hover{
+  background-color: #030D16;
+  color: #fff;
+}
+
+.home .media-icons{
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .media-icons a{
+  color: #fff;
+  font-size: 1.6em;
+  transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover{
+  transform: scale(1.3);
+}
+
+.home video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*manali page*/
+
+#manaliimage img{
+  width: 100%;
+  height: 300px;
+}
+
+.content{
+  margin-top: 80px;
+}
+main{
+  width: 70%;
+  display: inline-block;
+  margin-left: 5%;
+
+}
+.upper img{
+  width: 70%;
+  height: 400px;
+}
+
+aside{
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;  
+}
+
+.widget{
+  border-top: 4px solid black;
+}
+
+.widget img{
+  width: 90%;
+  height: 180px;
+}
+
+.widget span{
+  color: coral;
+}
+
+.widget a{
+  background: coral;
+  margin-top: 8px;
+  padding: 12px 60px;
+  color:#fff;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.widget a:hover{
+  background-color: rgb(98, 240, 98);
+}
+
+main h1{
+  font-size: 3rem;
+}
+main h1:hover{
+  color: coral;
+}
+
+main h3{
+  border-left: coral solid 4px;
+  font-size: 2rem;
+}
+main h5{
+  border-left: coral solid 4px;
+  font-size: 1rem;
+}
+
+/* footer*/
+
+footer{
+  background-color: white;
+  color: #fff;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+
+}
+
+.footsocial{
+  text-align: center;
+  padding: 25px;
+  color: #fff;
+
+}
+
+footer .footsocial a{
+  font-size: 24px;
+  color: inherit;
+  
+  width: 40px;
+  height: 40px;
+  line-height: 30px;
+  display: inline-block;
+  text-align: center;
+  
+  margin: 0 8px;
+  opacity: 0.75;
+
+}
+
+footer .footsocial a:hover{
+  opacity: 1;
+}
+footer ul{
+  text-align: center;
+  list-style: none;
+  font-size: 18px;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+  margin: 10px;
+
+}
+
+footer ul li{
+  display: inline-block;
+  padding: 0.15px;
+}
+
+footer ul li a:hover{
+  opacity: 1;
+}
+
+footer .copyright{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  /* color: gray; */
+  color: aqua;
+}
+
+
+/* Gallery */
+
+.gallery:hover {
+  transform: translateY(-10px);
+}
+
+.headinggallery {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 5rem;
+
+}
+
+.gallery {
+  margin-left: 38px;
+  margin-bottom: 20px;
+}
+.headinggallery {
+  text-shadow: 2px 2px 5px red;
+}
+
+
+/* India & Abroad Page */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/3.jpg);
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+.row{
+  display: flex;
+  height: 88%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.col{
+  flex-basis: 50%;
+  padding: 50px;
+}
+.headingtitle {
+  color: #fff;
+  font-size: 100px;
+}
+.container .col p{
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.card{
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor:  pointer;
+  margin: 10px 15px;
+
+  font-size: larger;
+  color: white;
+}
+.card:hover{
+  transform: translateY(-10px);
+}
+
+
+.city {
+  color: white;
+  
+}
+
+
+/* about us */
+
+.image1 {
+  padding-top: 80px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.border1 {
+  border-top: 4px solid black;
+  border-left: 4px solid black;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  box-shadow: 10px 10px 30px black;
+}
+
+.image2 {
+  position: absolute;
+  left: 600px;
+  top: 350px;
+
+}
+
+.border2 {
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 10px 2px 20px black;
+
+}
+
+.mainabout {
+  float: left;
+  width: 67%;
+  background-color: tan;
+  height: 600px;
+}
+
+.content2 {
+  background-color: tan;
+  height: 600px;
+
+}
+
+.content2heading {
+  font-family: 'Oswald', sans-serif;
+  padding-top: 120px;
+  font-size: 45px;
+  color: #5f6970;
+  text-shadow: 0px 5px 5px black;
+}
+
+.para {
+  color: #134060;
+  font-family: cursive;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+hr {
+  height: 1px;
+  color: black;
+}
+
+
+
+.image1 :hover {
+  transform: translateY(10px);
+
+
+
+}
+
+.image2 :hover {
+  transform: translatex(10px);
+
+}

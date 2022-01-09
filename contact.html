@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url("image/purple\ back.jpg");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+    width: 100vw;
+    background-attachment: fixed;
+    
+}
+.section1{
+    width: 45%;
+}
+.contact{background: rgba(13,6,40,0.6);
+    height: 580px;
+    width: 540px;
+    color: white;
+    border: 2px solid rebeccapurple;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 80px;
+    margin-left: 100px;
+    box-shadow: 4px 5px 15px rebeccapurple;
+}
+.heading{
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 2.5rem;
+    color:magenta;
+}
+.content{
+    padding: 10px;
+    margin-left: 40px;
+    margin-top: 20px;
+    width: 380px;
+    color: whitesmoke;
+    font-family: cursive;
+    word-spacing: 3px;
+    font-size: 1.3rem;
+}
+.details{ 
+    margin-top: 60px;
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 1.3rem;
+    word-spacing: 3px;
+    width: 380px;
+
+
+}
+i{
+    color: magenta;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.details :hover{
+    font-size: 1.38rem;
+    color: blue;
+}
+.forms{
+    background: rgba(13,6,40,0.6);
+    height: 570px;
+    width: 730px;
+    color: white;
+    border: 2px solid purple;
+    box-shadow: 5px 2px 15px purple;
+    border-radius: 20px;
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 750px;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px ;
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 1.3rem;
+    word-spacing: 10px;
+
+}
+input{
+    border-color: black;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    font-family: cursive;
+   width: 330px;
+}
+textarea{
+    border-color: black;
+    border-radius: 25px;
+    padding-left: 10px;
+    font-family: cursive;
+}
+.submit{
+    background-color: blue;
+    color: whitesmoke;
+    font-family: cursive;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 0px 40px;
+}
+h1{
+    font-size: 3.5rem;
+}
+.section2{
+    padding-top: 40px;
+}
+.submit{
+    background-color: #FF00FF;
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+      
+        <div class="navigation">
+          <div class="navigation-items">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="signin.html">Sign in</a>
+          </div>
+        </div>
+      </header>
+
+    <div class="section1">
+        <div class="contact">
+            <div class="heading">
+                <h1>Get in touch.</h1>
+            </div>
+            <div class="content">
+                <p>
+                    We're here to help and answer any questions you might have. We will answer ypur inquiries in a
+                    maximum of 48 hours.
+                </p>
+                <div class="details">
+                    <i class="fas fa-envelope"></i>&emsp;
+                    <a href="#">contact@travelivony.com</a><br><br>
+                    <i class="fas fa-phone-alt"></i>&emsp;
+                    <a href="#">+123-456-7890</a><br><br>
+                    <i class="fas fa-globe"></i>&emsp;
+                    <a href="#">travelivony.com</a><br><br>
+                    <i class="fas fa-map-marker-alt"></i>&emsp;
+                    <a href="#">Patiala,Chandigarh NH 7,64, <span style="padding-left: 45px;">Tehsil, Rajpura,
+                            Punjab
+                            140401.</span></a>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <form action="">
+        <div class="forms">
+            <label for="Name">First Name*</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+            <span> <label for="Lastname">Last Name*</label><br><br>
+
+                <input type="text" id="Name" name="firstname" required>
+                <input type="text" id="Lastname" name="lastname" required></span><br><br>
+
+
+            <label for="Email">Email*</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <span> <label for="Number">Phone Number*</label><br><br>
+
+                <input type="email" id="Email" name="email" required>
+                <input type="number" id="Number" name="phonenumber" required></span><br><br>
+            <label for="Message">Message</label><br><br>
+            <textarea type="textarea" id="Message" required name="message" rows="6" cols="60"></textarea>
+            </textarea><br>
+            <br>
+            
+            <input type="submit" class="submit">
+            <br>
+        
+        </form>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
