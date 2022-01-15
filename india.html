@@ -2,88 +2,105 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card1{
-  background-image: url(image/paragliding.jpg);
-  background-size: cover;
-  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRAVEL IVONY|| INDIA</title>
+  <style>
+    body {
+      background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(image/3.jpg);
+      background-size: cover;
+    }
 
-  
-}
-.card2{
-  background-image: url(image/2.jpg);
-  background-size: cover;
+    .card1 {
+      background-image: url(image/paragliding.jpg);
+      background-size: cover;
 
-}
-.card3{
-  background-image: url(image/laksh.jpg);
-  background-size: cover;
 
-}
-.card4{
-  background-image: url(image/lehp.jpg);
-  background-size: cover;
-}
-    </style>
 
-    <link rel="stylesheet" href="style.css">
+    }
+
+    .card2 {
+      background-image: url(image/2.jpg);
+      background-size: cover;
+
+    }
+
+    .card3 {
+      background-image: url(image/laksh.jpg);
+      background-size: cover;
+
+    }
+
+    .card4 {
+      background-image: url(image/lehp.jpg);
+      background-size: cover;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="brand">Travel &nbsp Ivony</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-          <div class="navigation-items">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="signin.html">Sign in</a>
-          </div>
-        </div>
-      </header>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1 class="headingtitle">India</h1>
-                <p>“A journey of a thousand miles begins with a single step”</p>
-            </div>
-            <div class="col">
-                <a href="india/manali.html">
-                <div class="card card1">
-                    <h3 class="city">Manali</h3>
-                </div>
-                </a>
-
-                <a href="india/Goa.html">
-                <div class="card card2">
-                    <h3 class="city">Goa</h3>
-                </div>
-                </a>
-
-                <a href="india/lakshadweel.html">
-                <div class="card card3">
-                    <h3 class="city">Lakshadweep</h3>
-                </div>
-            </a>
-
-            <a href="india/ladakh.html">
-                <div class="card card4">
-                    <h3 class="city">Leh Ladakh</h3>
-                </div>
-
-                </a>
-            </div>
-        </div>
+  <header>
+    <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign in</a>
+      </div>
     </div>
+  </header>
 
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="headingtitle">India</h1>
+        <p>“A journey of a thousand miles begins with a single step”</p>
+      </div>
+      <div class="col">
+        <a href="india/manali.html">
+          <div class="card card1">
+            <h3 class="city">Manali</h3>
+          </div>
+        </a>
 
+        <a href="india/Goa.html">
+          <div class="card card2">
+            <h3 class="city">Goa</h3>
+          </div>
+        </a>
+
+        <a href="india/lakshadweel.html">
+          <div class="card card3">
+            <h3 class="city">Lakshadweep</h3>
+          </div>
+        </a>
+
+        <a href="india/ladakh.html">
+          <div class="card card4">
+            <h3 class="city">Leh Ladakh</h3>
+          </div>
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+  </script>
 </body>
 
 </html>
