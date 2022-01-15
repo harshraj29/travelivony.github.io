@@ -234,6 +234,12 @@ section{
 }
 
 @media (max-width: 560px){
+  
+  .home .content{
+    width: 80%;
+    min-width: 281px;
+  }
+  
   .home .content h1{
     font-size: 3em;
     line-height: 60px;
