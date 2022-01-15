@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Ivony | Explore with us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-  </head>
-  <body>
 
-  
-    <header>
-      <a href="index.html" class="brand">Travel &nbsp Ivony</a>
-    
-      <div class="navigation">
-        <div class="navigation-items">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="contact.html">Contact</a>
-          <a href="signin.html">Sign in</a>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Ivony</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
 
-    <section class="home">
-      <video class="video" src="1.mp4" autoplay muted loop></video>
-      <div class="content active">
-        <h1>Explore<br><span>With Us</span></h1>
-        <p>FILL YOUR LIFE WITH ADVENTURES, NOT THINGS. HAVE STORIES TO TELL NOT STUFF TO SHOW.</p>
-        <a href="india.html">India</a>
-        <a href="abroad.html">Abroad</a>
-      </div>
-     
-      </div>
-      <div class="media-icons">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/"target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        
-      </div>
+<body>
 
-    </section>
+  <header>
 
-  </body>
+    <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign in</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+    <div class="content active">
+      <h1>Explore<br><span>With Us</span></h1>
+      <p>FILL YOUR LIFE WITH ADVENTURES, NOT THINGS. HAVE STORIES TO TELL NOT STUFF TO SHOW.</p>
+      <a href="india.html">India</a>
+      <a href="abroad.html">Abroad</a>
+    </div>
+
+    <div class="media-icons">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+
+  </section>
+
+  <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+  </script>
+
+</body>
+
 </html>
