@@ -234,12 +234,10 @@ section{
 }
 
 @media (max-width: 560px){
-  
   .home .content{
     width: 80%;
     min-width: 281px;
   }
-  
   .home .content h1{
     font-size: 3em;
     line-height: 60px;
@@ -272,6 +270,7 @@ aside{
   display: inline-block;
   vertical-align: top;  
 }
+body{background-color:#161B22;color:white;}
 
 /* .widget{
   border-top: 4px solid #fff;
@@ -438,7 +437,6 @@ footer .copyright{
   text-align: center;
   font-style: italic;
   font-size: 5rem;
-
 }
 .gallery {
   height: 500px;
@@ -448,6 +446,48 @@ footer .copyright{
 }
 .headinggallery {
   text-shadow: 2px 2px 5px red;
+}
+
+.box{
+  
+  display: inline-block;
+  position: relative;
+  height: 500px;
+  width: 450px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.img-comtent{
+ 
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  height: 100%; 
+  box-sizing: border-box; 
+  width: 100%;
+  transition: all 0.5s;
+  left: -100%;
+  text-align: center;
+ justify-content: center;
+ overflow: hidden;
+}
+
+.img-comtent h3{
+  margin-top: 200px;
+}
+.box:hover .img-comtent{
+  left: 0;
+}
+.box img{
+  width: 100%;
+  height: auto;
+  height: 500px;
+  width: 450px;
+  margin-left: 38px !important;
+  margin-bottom: 20px !important;
 }
 
 @media (max-width: 560px){
@@ -572,12 +612,12 @@ footer .copyright{
 .mainabout {
   float: left;
   width: 67%;
-  background-color: tan;
+  background-color: #161B22;
   height: 600px;
 }
 
 .content2 {
-  background-color: tan;
+  background-color: #161B22;
   height: 600px;
 
 }
@@ -586,12 +626,12 @@ footer .copyright{
   font-family: 'Oswald', sans-serif;
   padding-top: 120px;
   font-size: 45px;
-  color: #5f6970;
-  text-shadow: 0px 5px 5px black;
+  color: aliceblue;
+  text-shadow: 0px 5px 5px #fff;
 }
 
 .para {
-  color: #134060;
+  color: #fff;
   font-family: cursive;
   font-weight: bold;
   padding-top: 30px;
