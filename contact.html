@@ -2,204 +2,119 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <style>
-        *{
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-image: url("image/purple\ back.jpg");
-    background-repeat: no-repeat ;
-    background-position: center;
-    background-size: cover;
-    height:100vh;
-    width: 100vw;
-    background-attachment: fixed;
-    
-}
-.section1{
-    width: 45%;
-}
-.contact{background: rgba(13,6,40,0.6);
-    height: 580px;
-    width: 540px;
-    color: white;
-    border: 2px solid rebeccapurple;
-    border-radius: 20px;
-    position: fixed;
-    margin-top: 80px;
-    margin-left: 100px;
-    box-shadow: 4px 5px 15px rebeccapurple;
-}
-.heading{
-    margin-top: 10px;
-    margin-left: 40px;
-    font-size: 2.5rem;
-    color:magenta;
-}
-.content{
-    padding: 10px;
-    margin-left: 40px;
-    margin-top: 20px;
-    width: 380px;
-    color: whitesmoke;
-    font-family: cursive;
-    word-spacing: 3px;
-    font-size: 1.3rem;
-}
-.details{ 
-    margin-top: 60px;
-    color: whitesmoke;
-    font-family: cursive;
-    font-size: 1.3rem;
-    word-spacing: 3px;
-    width: 380px;
-
-
-}
-i{
-    color: magenta;
-}
-a{
-    text-decoration: none;
-    color: whitesmoke;
-}
-.details :hover{
-    font-size: 1.38rem;
-    color: blue;
-}
-.forms{
-    background: rgba(13,6,40,0.6);
-    height: 570px;
-    width: 730px;
-    color: white;
-    border: 2px solid purple;
-    box-shadow: 5px 2px 15px purple;
-    border-radius: 20px;
-    position: fixed;
-    margin-top: 50px;
-    margin-left: 750px;
-    display: block;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30px ;
-    color: whitesmoke;
-    font-family: cursive;
-    font-size: 1.3rem;
-    word-spacing: 10px;
-
-}
-input{
-    border-color: black;
-    border-radius: 25px;
-    font-size: 1.3rem;
-    padding-left: 10px;
-    font-family: cursive;
-   width: 330px;
-}
-textarea{
-    border-color: black;
-    border-radius: 25px;
-    padding-left: 10px;
-    font-family: cursive;
-}
-.submit{
-    background-color: blue;
-    color: whitesmoke;
-    font-family: cursive;
-    padding: 5px;
-    border: 1px solid blue;
-    border-radius: 20px;
-    padding: 0px 40px;
-}
-h1{
-    font-size: 3.5rem;
-}
-.section2{
-    padding-top: 40px;
-}
-.submit{
-    background-color: #FF00FF;
-}
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+       
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script src="script.js"></script>
 </head>
 
-<body>
+<header>
 
-    <header>
-        <a href="index.html" class="brand">Travel &nbsp Ivony</a>
-      
-        <div class="navigation">
-          <div class="navigation-items">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-            <a href="signin.html">Sign in</a>
-          </div>
-        </div>
-      </header>
-
-    <div class="section1">
-        <div class="contact">
-            <div class="heading">
-                <h1>Get in touch.</h1>
-            </div>
-            <div class="content">
+    <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+      <div class="navigation-items">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign in</a>
+      </div>
+    </div>
+  </header>
+  
+<body style="background-image: url(https://images.unsplash.com/photo-1613426995195-b5acccd8670c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+    <div class="container">
+    <heading>
+        <h1 style="font-size: 3rem;">Contact Us</h1>
+        <p> We're here to help and answer any questions you might have. We will answer ypur inquiries in a
+            maximum of 48 hours.</p>
+    </heading>
+    <div class="content">
+        <div class="content-form">
+            <section>
+                <i class="fa fa-map-marker fa-2x" aria-hidden="true" style="background-color: rgb(66, 195, 247);"></i>
+                <h2>address</h2>
                 <p>
-                    We're here to help and answer any questions you might have. We will answer ypur inquiries in a
-                    maximum of 48 hours.
+                    Patiala<br>
+                    Chandigarh NH 7,64 <br>
+                    Punjab,140401.
                 </p>
-                <div class="details">
-                    <i class="fas fa-envelope"></i>&emsp;
-                    <a href="#">contact@travelivony.com</a><br><br>
-                    <i class="fas fa-phone-alt"></i>&emsp;
-                    <a href="#">+123-456-7890</a><br><br>
-                    <i class="fas fa-globe"></i>&emsp;
-                    <a href="#">travelivony.com</a><br><br>
-                    <i class="fas fa-map-marker-alt"></i>&emsp;
-                    <a href="#">Patiala,Chandigarh NH 7,64, <span style="padding-left: 45px;">Tehsil, Rajpura,
-                            Punjab
-                            140401.</span></a>
+            </section>
 
+            <section>
+                <i class="fa fa-phone fa-2x" aria-hidden="true" style="background-color: rgb(25, 252, 25);"></i>
+                <h2>Phone</h2>
+                <p>123-456-78901548</p>
+            </section>
 
+            <section>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true" style="background-color: red;"></i>
+                <h2>E-mail</h2>
+                <p>travelivony@gmail.com</p>
+            </section>
+        </div>
+    </div>
+
+    <form id="form" name="myForm" action=" " onsubmit="return validateForm()" method="post" >
+        <div class="form">
+            <div class="right">
+                <div class="contact-form">
+                    <input type="text" id="name" required>
+                    <span>Full Name</span>
                 </div>
 
+                <div class="contact-form">
+                    <input type="email" id="email" required>
+                    <span>E-mail Id</span>
+                </div>
+                <div class="contact-form" id="text" >
+                    <input type="text" id="text">
+                  </input>
+                    <span>Type your Message....</span>
+                </div>
+
+                <div class="contact-form">
+                    <input type="submit" name="SUBMIT"  id="submit" style="background-color: rgb(250, 99, 44); border: none; outline: none; transition: 0.3s ease-in-out; height: 50px; border-radius: 5px; width: 210px; " >
+                    <!-- <input type="submit" value="SUBMIT" class="submit-btn" id="submit-btn" onclick="popup()" style="background-color: rgb(250, 99, 44); border: none; outline: none; height: 50px; border-radius: 5px; width: 210px; "> -->
+                </div>
             </div>
         </div>
-    </div>
-    <div class="section2">
-        <form action="">
-        <div class="forms">
-            <label for="Name">First Name*</label> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
-            <span> <label for="Lastname">Last Name*</label><br><br>
-
-                <input type="text" id="Name" name="firstname" required>
-                <input type="text" id="Lastname" name="lastname" required></span><br><br>
-
-
-            <label for="Email">Email*</label>
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <span> <label for="Number">Phone Number*</label><br><br>
-
-                <input type="email" id="Email" name="email" required>
-                <input type="number" id="Number" name="phonenumber" required></span><br><br>
-            <label for="Message">Message</label><br><br>
-            <textarea type="textarea" id="Message" required name="message" rows="6" cols="60"></textarea>
-            </textarea><br>
-            <br>
-            
-            <input type="submit" class="submit">
-            <br>
-        
-        </form>
         </div>
-
+    </form>
+    <div class="media">
+        <li><i class="fa fa-facebook-square fa-2x" aria-hidden="true" style="color: #3b5998 ;"></i></li>
+        <li><i class="fa fa-instagram fa-2x" aria-hidden="true" style="color: rgb(255, 45, 255)"></i></li>
+        <li><i class="fa fa-whatsapp fa-2x" aria-hidden="true" style="color: rgb(25, 252, 25);"></i></li>
+        <li><i class="fa fa-twitter-square fa-2x" aria-hidden="true" style="color: rgb(66, 195, 247);"></i></li>
+    </div>
+    <div class="empty">
 
     </div>
+    </div>
 
+    <script type="text/javascript">
+        //Javacript for responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+    
+        menuBtn.addEventListener("click", () => {
+          menuBtn.classList.toggle("active");
+          navigation.classList.toggle("active");
+        });
+
+    
+      </script>
+    
 </body>
 
 </html>
