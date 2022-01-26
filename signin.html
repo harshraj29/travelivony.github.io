@@ -1,143 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN PAGE</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: rgb(13,35,59);
-        }
-
-        .container1 {
-            display: flex;
-            height: 500px;
-            width: 800px;
-
-            margin: auto;
-            margin-top: 100px;
-
-        }
-
-        .form {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            align-items: center;
-            background-color: #FCFEF0;
-
-        }
-
-        .form h2 {
-            font-size: 2.5rem;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            margin: 40px;
-            color: #FC795D;
-
-        }
-
-        .box {
-            padding: 12px;
-            width: 65%;
-            margin: 15px;
-            border: 1px solid black;
-            outline: none;
-            border-radius: 20px;
-        }
-
-        #submit {
-            padding: 12px 30px;
-            width: 40%;
-            margin-top: 10%;
-            background-color: #FC795D;
-            color: #FCFEF0;
-            font-weight: bold;
-            border: none;
-            outline: none;
-            border-radius: 20px;
-
-        }
-
-        #submit:hover {
-            cursor: pointer;
-            
-            background-color:rgb(13,35,59);
-
-        }
-
-        .form a {
-            text-decoration: none;
-            color:#FB795D;
-            margin-top: 20px;
-
-        }
-
-        .form a:hover {
-            color: rgb(13,35,59);
-        }
-
-        .side {
-            
-            display: flex;
-            align-items: center;
-            width: 50%;
-            background-color: #FCFEF0;
-        }
-
-        .side img {
-            width: 381px;
-            height: 359px;
-}
-        }
-        .signup{
-            font-size: +2;
-        }
-    </style>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Login | Travel Ivony</title>
+   <link rel="stylesheet" href="signin.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <a href="index.html" class="brand">Travel &nbsp Ivony</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-          <div class="navigation-items">
+   <header>
+      <a href="index.html" class="brand">Travel &nbsp Ivony</a>
+      <div class="menu-btn"></div>
+      <div class="navigation">
+         <div class="navigation-items">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
-        
-          </div>
-        </div>
-      </header>
+         </div>
+      </div>
+   </header>
 
-    <div class="container1">
+   <div class="main">
+      <div class="title-text">
+         <div class="title login">
+            Login
+         </div>
+         <div class="title signup">
+            Signup
+         </div>
+      </div>
+      <div class="form-container">
+         <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+         </div>
+         <div class="form-inner">
+            <form action="index.html" class="login">
+               <div class="field">
+                  <input type="email" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password" placeholder="Password" required>
+               </div>
+               <div class="pass-link" id="forgot">
+                  <a href="#">Forgot password?</a>
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Login">
+               </div>
+               <div class="signup-link">
+                  Not a member? <a href="">Signup now</a>
+               </div>
+            </form>
+            <form action="index.html" onsubmit="return Form()" name="sign" class="signup">
+               <div class="field">
+                  <input type="email" placeholder="Email Address" required>
+               </div>
+               <div class="field">
+                  <input type="password" name="passwd" placeholder="Password">
+               </div>
+               <div class="field">
+                  <input type="password" name="confirm" placeholder="Confirm password">
+               </div>
+               <div class="field btn">
+                  <div class="btn-layer"></div>
+                  <input type="submit" value="Signup">
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+   <script>
+      
+      const loginText = document.querySelector(".title-text .login");
+      const loginForm = document.querySelector("form.login");
+      const loginBtn = document.querySelector("label.login");
+      const signupBtn = document.querySelector("label.signup");
+      const signupLink = document.querySelector("form .signup-link a");
+      signupBtn.onclick = (() => {
+         loginForm.style.marginLeft = "-50%";
+         loginText.style.marginLeft = "-50%";
+      });
+      loginBtn.onclick = (() => {
+         loginForm.style.marginLeft = "0%";
+         loginText.style.marginLeft = "0%";
+      });
+      signupLink.onclick = (() => {
+         signupBtn.click();
+         return false;
+      });
 
-        <form class="form">
-            <h2>
-                Login/Signup
-            </h2>
-            <input type="email" name="Email" class="box" placeholder="Enter Email" required>
-            <input type="password" name="Password" class="box" placeholder="Enter Password" required>
-            <a href="#">Forget Password?</a>
-    
-            <button type="submit" id="submit">CONTINUE</button>
-        </form>
-        <div class="side">
-
-            <img src="image/login.jpg">
-            
-
-        </div>
-    </div>
+   function Form(){
+    var a=document.forms[1]["passwd"].value;
+      if (String(a).length<5) {
+         swal({
+            title: "oops!",
+            text: "Password must be 5 digits long!",
+            icon: "error",
+           });
+         return false;
+      }
+      var b=document.forms["sign"]["confirm"].value;
+      if (b!==a){
+         swal({
+            title: "oops!",
+            text: "Password Unmatched!",
+            icon: "error",
+           });
+         return false;
+      }
+  }
+   </script>
 </body>
 
 </html>
