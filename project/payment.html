@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <script src="paymentvalidate.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+    .brand{
+        color: #fff;
+        font-size: 1.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        position:absolute;top:5px; left:20px;
+        margin-bottom: 50px;
+    }
+    </style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <a href="../index.html" class="brand">Travel &nbsp Ivony</a>
+
+        <form id="form" name="myForm" action="confirmationpage.html" onsubmit="return validateForm()" method="post">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>name on card :</span>
+                        <input type="text" placeholder="Name on card" id="nameoncard">
+                    </div>
+                    <div class="inputBox">
+                        <span>card number :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444" id="cardnumber">
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month :</span>
+                        <input type="text" placeholder="January" id="expmonth">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>exp year :</span>
+                            <input type="number" placeholder="2022" id="expyear">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="123" id="cvv">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <button type="submit" class="submit-btn" id="submit">proceed to checkout</button>
+        </form>
+
+    </div>
+    <script>
+        
+    function popup(){
+        swal({
+            title: "Payment Successful!",
+            text: "We have recived Your Booking!",
+            icon: "success",
+            button: "OK",
+        });
+    }
+    
+    </script>
+</body>
+
+</html>
